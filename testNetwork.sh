@@ -14,7 +14,7 @@ if [ ! $(curl -s captive.apple.com) ]; then
   echo "No internet connection - Attempting to log in..."
 
   # Attempt to log into school guest network
-  curl -s -m 5 --data "user=jconrad23&password=M1necr%40fter167&email=&cmd=authenticate&agreementAck=Accept" -X POST http://10.0.0.90/cgi-bin/login?cmd=login&mac=68:7F:74:47:35:2E
+  curl -s -m 5 --data "user=jconrad23&password=PASSWORD&email=&cmd=authenticate&agreementAck=Accept" -X POST http://10.0.0.90/cgi-bin/login?cmd=login&mac=68:7F:74:47:35:2E
   # This curl mimics the POST string sent to the servers
   # when you log in with the captive portal
   sleep 5
